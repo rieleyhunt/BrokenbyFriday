@@ -11,19 +11,58 @@
 }
 
 .app-container {
+  position: relative; /* Parent relative positioning */
+  width: 100vw; /* Full width */
+  min-height: 100vh; /* Minimum height */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  height: 100vh;
-  text-align: center;
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
 }
 
+.main-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  text-align: left;
+  margin-top: 100%;
+}
+
+.concert1 {
+  position: fixed; /* or position: absolute; based on your specific needs */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  object-fit: cover; /* Covers the entire area of the element, may cut off parts of the image */
+  z-index: -1; /* Keeps the image behind other content; remove or adjust based on context */
+}
 /* The official logo image! */
 .logo {
-  width: 1123px;
-  height: 794px;
+  width: 60vw; /* Adjust size more responsively */
+  height: auto; /* Maintain aspect ratio */
+  position: relative; /* Make it relative to flex item adjustments */
+  margin-top: 0px; /* Space from top */
+  z-index: 2;
+}
+
+.buttons-container {
+  width: 100%; /* Full container width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Space below the logo */
+}
+
+.button {
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Dreadful-Regular';
 }
 
 .we-are-broken-by-friday {
@@ -55,45 +94,4 @@
   font-weight: 400;
   line-height: 36px;
   word-wrap: break-word;
-}
-
-/* Upcoming */
-.upcoming {
-  color: white;
-  font-size: 20px;
-  font-family: 'Inter';
-  font-weight: 500;
-  line-height: 30px;
-  word-wrap: break-word;
-}
-
-/* Gallery */
-.gallery {
-  color: white;
-  font-size: 20px;
-  font-family: 'Inter';
-  font-weight: 500;
-  line-height: 30px;
-  word-wrap: break-word;
-}
-
-/* Booking */
-.booking {
-  color: white;
-  font-size: 20px;
-  font-family: 'Inter';
-  font-weight: 500;
-  line-height: 30px;
-  word-wrap: break-word;
-}
-
-/* Home */
-.home {
-  color: white;
-  font-size: 20px;
-  font-family: 'Inter';
-  font-weight: 500;
-  line-height: 30px;
-  word-wrap: break-word;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
