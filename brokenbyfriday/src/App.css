@@ -21,13 +21,15 @@
 }
 
 .main-page {
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
+  background-color: black;
   padding: 20px;
-  height: 100vh;
+  height: auto;
+  width: 100vw;
   text-align: left;
-  margin-top: 100%;
+  margin-top: 40px;
 }
 
 .concert1 {
@@ -41,7 +43,7 @@
 }
 /* The official logo image! */
 .logo {
-  width: 60vw; /* Adjust size more responsively */
+  width: 70vw; /* Adjust size more responsively */
   height: auto; /* Maintain aspect ratio */
   position: relative; /* Make it relative to flex item adjustments */
   margin-top: 0px; /* Space from top */
@@ -53,7 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Space below the logo */
+  margin-top: -30px; /* Space below the logo */
 }
 
 .button {
@@ -67,31 +69,54 @@
 
 .we-are-broken-by-friday {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Dreadful-Regular';
   font-weight: 600;
   line-height: 44px;
-  text-align: center;
-  margin: 0 auto;
   word-wrap: break-word;
+  margin-left: 5%;
 }
 
 /* Ottawa’s up and coming pop punk sensation */
 .ottawa-pop-punk {
   color: #828282;
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Dreadful-Regular';
   font-weight: 500;
   line-height: 30px;
   word-wrap: break-word;
+  margin-top: 0px;
+  margin-left: 5%;
 }
 
-/* Broken By Friday © */
-.broken-by-friday {
-  color: white;
-  font-size: 24px;
-  font-family: 'Inter';
-  font-weight: 400;
-  line-height: 36px;
-  word-wrap: break-word;
+.display-photos {
+  position: relative;
+  width: 80vw;
+  height: auto;  /* Adjusted to auto to fit content */
+  min-height: 100vh;  /* Ensures minimum height */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;  /* Adjusts spacing between images */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  padding: 20px;  /* Optional: Adds padding around the container */
+  overflow: hidden;  /* Ensures no content spills outside */
+}
+
+.concert2, .concert4 {
+  padding: 10px;  /* Reduced padding to ensure fit within the container */
+  position: relative;
+  width: calc(30% - 20px);  /* Subtracts padding to ensure even distribution */
+  height: auto;  /* Maintains aspect ratio */
+  max-height: 80%;  /* Restricts height but maintains aspect ratio */
+}
+
+.concert3 {
+    padding: 10px;  /* Reduced padding to ensure fit within the container */
+    position: relative;
+    width: calc(33% + 10px);  /* Subtracts padding to ensure even distribution */
+    height: auto;  /* Maintains aspect ratio */
+    max-height: 80%;  /* Restricts height but maintains aspect ratio */  
 }
