@@ -1,0 +1,31 @@
+.upcoming-page {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .concerts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+  
+  .concert-card {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    transition: transform 0.2s;
+  }
+  
+  .concert-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .concert-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
