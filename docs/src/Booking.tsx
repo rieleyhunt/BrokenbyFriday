@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bbfLogo from './assets/bbf.png';
+import bbfLogo from './assets/bbf.svg';
 import Concert1 from './assets/Concert1.jpg';
 import './Booking.css';
 
